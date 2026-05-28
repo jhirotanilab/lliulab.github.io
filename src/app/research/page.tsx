@@ -4,9 +4,9 @@ import OFETImage from "../_images/OFET.jpg";
 import MagnesiumImage from "../_images/MagnesiumAlloys.jpg";
 import MLandHPCImage from "../_images/MLandHighPerformanceComputing.jpg";
 
-import FDTRImage from "../_images/fdtr.jpeg";
-import FlexibleImage from "../_images/flexible2.jpg";
-import DeviceImage from "../_images/device.jpeg";
+// import FDTRImage from "../_images/fdtr.jpeg";
+// import FlexibleImage from "../_images/flexible2.jpg";
+// import DeviceImage from "../_images/device.jpeg";
 import Bunner2Image from "../_images/JKA_banner2.png";
 import Bunner3Image from "../_images/JKA_banner3.png";
 import Link from "next/link";
