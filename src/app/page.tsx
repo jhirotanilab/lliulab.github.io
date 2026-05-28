@@ -11,7 +11,7 @@ import NEWS_LIST from "./_data/news";
 import Bunner2Image from "./_images/JKA_banner2.png";
 import Bunner3Image from "./_images/JKA_banner3.png";
 
-import { YouTubeEmbed } from "@next/third-parties/google";
+// import { YouTubeEmbed } from "@next/third-parties/google";
 
 export default function Home() {
   return (
