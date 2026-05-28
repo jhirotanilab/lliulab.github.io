@@ -2,9 +2,10 @@
 import Image, { StaticImageData } from "next/image";
 import HeroImage from "./_images/fdtr.jpeg";
 import LogoImage from "./_images/Unknown.png";
-import FDTRImage from "./_images/fdtr.jpeg";
-import FlexibleImage from "./_images/flexible2.jpg";
-import DeviceImage from "./_images/device.jpeg";
+
+import OFETImage from "./_images/OFET.jpg";
+import MagnesiumImage from "./_images/MagnesiumAlloys.jpg";
+import MLandHPCImage from "./_images/MLandHighPerformanceComputing.jpg";
 import Link from "next/link";
 import NEWS_LIST from "./_data/news";
 import Bunner2Image from "./_images/JKA_banner2.png";
@@ -21,13 +22,20 @@ export default function Home() {
           <Image src={LogoImage} alt="logo" className="w-3/4 animate-fade" />
         </div>
       </div>
+
       <div className="flex flex-col gap-10 md:gap-20 justify-center items-center">
+
+        {/* Introduction Section */}
         <div className="p-10 flex flex-col justify-center items-center gap-10">
-          <div className="mt-10 text-2xl md:text-4xl lg:text-6xl text-center font-bold">
-            Nanoscale Thermal Science
-            <br />& Micro and Nanosystems
+          <div className="mt-10 text-2xl md:text-5xl lg:text-6xl text-center font-bold">
+            Computational Materials Science
           </div>
-          <div className="hidden md:flex items-center">
+          <div className="mt-10 text-2xl md:text-4xl lg:text-5xl text-center font-bold">
+            AI-Driven Atomistic Simulations
+            <br />& High-Performance Computing
+          </div>
+          {/* Youtubeは一旦消す */}
+          {/* <div className="hidden md:flex items-center">
             <YouTubeEmbed
               videoid="beeJIm58N10"
               height={400}
@@ -42,42 +50,53 @@ export default function Home() {
               width={300}
               params="controls=0"
             />
-          </div>
+          </div> */}
           <div className="lg:w-2/3 text-sm md:text-xl text-justify leading-5 md:leading-6">
-            My research team is an interdisciplinary research group specializing
-            in both the experimental characterization of energy transport in
-            nanomaterials and device fabrication for micro and nanosystems. My
-            research missions are to advance the fundamental understanding of
-            multiscale energy transport and make a transformative impact on
-            nanomaterial design and discovery for diverse applications such as
-            for future high-efficient electronic and thermal devices. I really
-            appreciate my great collaborators for greatful advices and sponsors
-            for supporting my academic researches.
+            The Liu Research Group develops next-generation computational materials science frameworks 
+            by integrating first-principles calculations, molecular dynamics simulations, machine learning 
+            interatomic potentials, and high-performance computing technologies. 
+            The group focuses on understanding atomic- and electronic-scale phenomena in materials through large-scale 
+            and high-accuracy simulations.<br />
+
+            <br />Current research topics include lightweight metallic materials, thermoelectric materials, 
+            organic field-effect transistors, and gas sensing materials. By combining data-driven approaches with 
+            physics-based simulations, the group investigates deformation mechanisms, thermal transport, 
+            electronic properties, and structure–property relationships in advanced materials.<br />
+
+            <br />A major focus of the group is the development of large-scale AI-driven atomistic simulation methods 
+            capable of bridging spatial and temporal scales beyond conventional computational limits. Through the integration 
+            of machine learning, computational mechanics, and large-scale parallel computing, the group aims to establish new 
+            computational platforms for advanced materials design and next-generation computational materials science.
+
           </div>
         </div>
+
+        {/* Research Section */}
         <div className="w-5/6 lg:w-2/3 flex flex-col gap-6 md:gap-10">
           <div className="text-4xl font-bold">RESEARCH</div>
           <div className="flex flex-col gap-10 lg:gap-8">
             <ResearchLi
-              image={FDTRImage}
-              title="Nanoscale and microscale thermal transport"
-              link="/research#fdtr"
+              image={OFETImage}
+              title="Analysis of Organic Field-Effect Transistors"
+              link="/research#ofet"
             />
             <ResearchLi
-              image={FlexibleImage}
-              title="Flexible electronics"
-              link="/research#flexible"
+              image={MagnesiumImage}
+              title="Evaluation of Mechanical Properties of Magnesium Alloys"
+              link="/research#magnesium"
             />
             <ResearchLi
-              image={DeviceImage}
-              title="Electronic and thermal devices for tissue engineering"
-              link="/research#device"
+              image={MLandHPCImage}
+              title="Integration of Machine Learning and High-Performance Computing"
+              link="/research#machine-learning"
             />
           </div>
           <Link href={"/research"} className="text-xl self-center">
             <button className="btn btn-primary text-lg">Show More</button>
           </Link>
         </div>
+
+        {/* News Section */}
         <div className="w-5/6 lg:w-2/3 flex flex-col gap-4">
           <div className="text-4xl font-bold">NEWS</div>
           <div className="flex flex-col gap-4 pl-4">
@@ -95,6 +114,8 @@ export default function Home() {
             <button className="btn btn-primary text-lg">Show More</button>
           </Link>
         </div>
+
+        {/* Acknowledgments Section */}
         <div className="w-5/6 lg:w-2/3 flex flex-col gap-4">
           <div className="text-2xl lg:text-4xl font-bold self-center">Acknowledgments</div>
           <div className="mt-2 md:mt-8 text-xl lg:text-3xl font-bold">Financial Supports</div>
@@ -126,6 +147,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+
       </div>
     </>
   );
