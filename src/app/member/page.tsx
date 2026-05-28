@@ -11,41 +11,41 @@ export default function Member() {
         <div className="text-3xl font-bold">STAFF</div>
         <div className="flex flex-col lg:flex-row w-full items-center">
           <Image
-            src={"/_images/hirotani-sensei.webp"}
-            width={100}
-            height={100}
-            alt="Hirotani-sensei"
+            src={"/_images/liu-sensei.jpg"}
+            width={200}
+            height={200}
+            alt="Lijun Liu-sensei"
             className="w-full md:w-2/3 lg:w-1/2 p-10"
           />
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <p className="text-2xl lg:text-3xl font-bold">
-                Jun Hirotani, Ph.D.
+                Lijun Liu, Ph.D.
               </p>
               <p className="text-base lg:text-xl">
-                Email: hirotani.jun.7v@kyoto-u.ac.jp
+                Email: liu@mech.eng.osaka-u.ac.jp
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-xl lg:text-2xl">Associate Professor</p>
+              <p className="text-xl lg:text-2xl">Assistant Professor</p>
               <p className="text-base lg:text-lg">
-                Department of Micro Engineering, Graduate School of Engineering,
-                Kyoto University, JAPAN
+                Department of Mechanical Engineering, 
+                Osaka University, Japan
               </p>
             </div>
             <div className="self-center lg:self-start">
               <Link
                 href={
-                  "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.021b7faef0586f89.html#display-items_research"
+                  "https://www.cfi.eng.osaka-u.ac.jp/seeds/seeds_list_1/lijun_liu_assist/"
                 }
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 <Image
-                  src={"/_images/KU_logo.png"}
+                  src={"/_images/OsakaUniv_logo.png"}
                   width={200}
                   height={100}
-                  alt="KU logo"
+                  alt="Osaka University logo"
                 />
               </Link>
             </div>
@@ -53,7 +53,7 @@ export default function Member() {
         </div>
         <div className="flex flex-row items-center gap-20">
           <Link
-            href={"https://researchmap.jp/7000020868?lang=en"}
+            href={"https://researchmap.jp/kellyliu?lang=en"}
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -61,10 +61,11 @@ export default function Member() {
               src={"/_images/thumb_researchmap.png"}
               width={200}
               height={100}
-              alt="KU logo"
+              alt="researchmap logo"
             />
           </Link>
-          <Link
+          {/* Google Scholarは登録なし */}
+          {/* <Link
             href={
               "https://scholar.google.com/citations?user=mKJl64kAAAAJ&hl=en"
             }
@@ -75,9 +76,9 @@ export default function Member() {
               src={"/_images/Google_Scholar_logo_2015.png"}
               width={200}
               height={100}
-              alt="KU logo"
+              alt="Google Scholar logo"
             />
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col gap-10 mt-8 lg:mt-0">
           <div className="flex flex-col gap-4">
@@ -87,27 +88,25 @@ export default function Member() {
             <div>
               <ul className="list-disc pl-4 text-base lg:text-lg">
                 <li>
-                  PRESTO Researcher, Department of Strategic Basic Research,
-                  Japan Science and Technology Agency, JAPAN (Dec. 2020 – Mar.
-                  2024)
+                  Assistant Professor, Department of Mechanical Engineering, Osaka University  (Apr. 2019 – Present)
                 </li>
                 <li>
-                  Assistant Professor, Department of Electrical Engineering,
-                  Graduate School of Engineering, Nagoya University (Jan. 2016 –
-                  Sep. 2021)
+                  Visiting Faculty Member, Information technology center, Nagoya University  (Jul. 2018 – Mar. 2019)
                 </li>
                 <li>
-                  Postdoctoral Researcher, Department of Electrical Engineering,
-                  Graduate School of Engineering, Nagoya University (Oct. 2014 –
-                  Dec. 2015)
+                  Visiting Faculty Member, Information technology center, Nagoya University  (Nov. 2017 – Jun. 2018)
                 </li>
                 <li>
-                  Engineer, Semiconductor Process R&D Division, DENSO
-                  Cooperation (Apr. 2013 – Sep. 2014)
+                  ACT-I Researcher, Japan Science and Technology Agency  (Oct. 2017 – Jun. 2018)
                 </li>
                 <li>
-                  Research Fellow (DC1), Japan Society for the Promotion of
-                  Science (Apr. 2011 – Mar. 2013)
+                  Researcher, Information technology center, Nagoya University  (Sep. 2014 – Sep. 2017)
+                </li>
+                <li>
+                  Technical Assistant, Graduate school of engineering, Nagoya University (Sep. 2014 – Mar. 2015)
+                </li>
+                <li>
+                  Toyota Motor Corporation (Oct. 2012 – Dec. 2013)
                 </li>
               </ul>
             </div>
@@ -119,17 +118,13 @@ export default function Member() {
             <div>
               <ul className="list-disc pl-4 text-base lg:text-lg">
                 <li>
-                  Ph.D., Aeronautics and Astronautics, Kyushu University, JAPAN
-                  (2013)
+                  Ph.D., Intelligent Machinery Systems, Graduate school of engineering, Kyushu University , JAPAN
+                  (2012)
                 </li>
 
                 <li>
-                  M.S., Aeronautics and Astronautics, Kyushu University, JAPAN
-                  (2011)
-                </li>
-                <li>
-                  B.E., Mechanical and Aerospace Engineering, Kyushu University,
-                  JAPAN (2009)
+                  M.S., Solid Mechanics, South China University of Technology, CHINA
+                  (2019)
                 </li>
               </ul>
             </div>

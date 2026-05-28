@@ -1,4 +1,9 @@
 import Image, { StaticImageData } from "next/image";
+
+import OFETImage from "../_images/OFET.jpg";
+import MagnesiumImage from "../_images/MagnesiumAlloys.jpg";
+import MLandHPCImage from "../_images/MLandHighPerformanceComputing.jpg";
+
 import FDTRImage from "../_images/fdtr.jpeg";
 import FlexibleImage from "../_images/flexible2.jpg";
 import DeviceImage from "../_images/device.jpeg";
@@ -10,46 +15,40 @@ export default function Research() {
   return (
     <div className="pt-20 flex flex-col items-center">
       <div className="w-5/6 md:w-2/3 flex flex-col md:gap-4 lg:gap-10">
+
+        {/* Research Topic Section */}
         <div className="text-4xl font-bold self-center pt-10 md:pt-20">
           Research Topics
         </div>
         <div className="flex flex-col gap-8 md:gap-10 lg:gap-16 mt-4 md:mt-0">
-          <div id="fdtr">
+          <div id="ofet">
             <ResearchLi
-              image={FDTRImage}
-              title="Nanoscale and microscale thermal transport"
-              details="When we pursue the highest performance of nano-electrical devices, it becomes crucial to manage the heat generation and dissipation, where thermal transport might be dominated by the thermal boundary resistance at the interfaces. We have explored nanoscale and microscale thermal transport by Raman thermal measurement and thermoreflectance technique with combinations of first-principle/molecular-dymanics calculations."
+              image={OFETImage}
+              title="Analysis of Organic Field-Effect Transistors"
+              details="The Organic Field-Effect Transistor (OFET) is recognized as a pivotal device in applications such as flexible circuits, sensors, and memory storage. However, its performance typically lags behind that of inorganic counterparts. Enhancing the performance of OFETs necessitates precise control over the characteristics of the organic semiconductor layer.
+              Recent advancements in molecular-level simulation techniques, including kinetic Monte Carlo methods, have significantly enhanced the capability to replicate the microscopic behavior of charge carriers. Nevertheless, these approaches often depend on two-dimensional Poisson equations, which inadequately capture short-range electrostatic interactions.
+              In this research, we successfully employed a three-dimensional partial differential equation solver to model OFET devices, fully accounting for the Coulomb interactions between charge carriers. Our findings reveal that at elevated gate voltages, the transfer characteristics derived from the three-dimensional Poisson equation exhibit a downward curvature and lower values compared to those predicted by two-dimensional Poisson equations, suggesting strong concordance with experimental observations."
             />
           </div>
-          <div id="flexible">
+          <div id="magnesium">
             <ResearchLi
-              image={FlexibleImage}
-              title="Flexible electronics"
-              details="In recent years, flexible electronics have attracted considerable attention due to the wide range of potential applications, from flexible displays to wearable healthcare devices. For example. carbon nanotube thin-film transistors (CNT TFTs) are considered to be promising building blocks for flexible electronics because of their remarkable electrical and mechanical properties. In my research group, flexible device applications based on nanomaterials have been explored for future IoT and healthcare devices."
+              image={MagnesiumImage}
+              title="Evaluation of Mechanical Properties of Magnesium Alloys"
+              details="Magnesium (Mg) is recognized as the lightest structural metal and serves as a promising alternative to heavier steels and aluminum alloys. Nevertheless, Mg exhibits limited plastic formability at room temperature and generally displays inferior strength compared to most aluminum alloys. This constraint in formability can be attributed to the significant disparity in critical resolved shear stress (CRSS) between basal slip systems and other slip and twinning systems. Consequently, the low CRSS acts as a limiting factor for the strength of Mg alloys, underscoring the importance of enhancing basal slip to improve their strength, deformability, and fracture toughness.
+                      This study presents a theoretical model aimed at predicting the CRSS in single-crystal Mg–Ca alloys. We quantitatively investigated the CRSS of basal dislocation slip along the basal plane using molecular dynamics simulations across a temperature range of 1 K to 500 K. The results obtained from the proposed theoretical model agree well with both simulation findings and micro-pillar compression test results for Mg–0.3 at.% Ca and Mg–0.6 at.% Ca alloys at ambient temperature."
             />
           </div>
-          <div id="device">
+          <div id="machine-learning">
             <ResearchLi
-              image={DeviceImage}
-              title="Electronic and thermal devices for tissue engineering"
-              details="As the field of tissue engineering advances, new tools for monitoring and evaluating engineered tissues along with new biomaterials to direct tissue growth are needed. We use nanomaterials such as carbon nanotubes and MXenes as an important tissue engineering material for improved tracking of cells, sensing of microenvironments, delivering of transfection agents, and scaffolding for incorporating with the host’s body. In addition, monitoring and alteringintra and intercellular processes would be useful for design of better engineered tissues. Since 2020, we have just started to make electronic and thermal devices for creating and monitoring engineered tissue."
+              image={MLandHPCImage}
+              title="Integration of Machine Learning and High-Performance Computing"
+              details="The optimization of material structures and the design of new materials rely on accurate property predictions through high-precision computational methods. While conventional macroscale modeling addresses real-scale simulations, it often depends on empirical approaches that limit accuracy. Conversely, atomistic-level techniques like ab initio molecular dynamics (AIMD) offer high precision but come with high computational costs, restricting the time and spatial scales that can be simulated. As chemical reactions and phase transitions occur on millisecond to microsecond time scales, reproducing these phenomena with AIMD is challenging, highlighting the need for rapid, high-precision analytical methods.
+              In this study, we employed a machine learning-based interatomic potential model for optimization on the Fugaku supercomputer, maintaining the accuracy of potential energy and interatomic forces. This approach resulted in a 31.7-fold increase in the computational speed of molecular dynamics (MD) simulations, achieving 149 nanoseconds per day across 12,000 nodes while retaining ab initio calculation accuracy."
             />
           </div>
-          {/* <div>
-            <ResearchLi
-              image={DeviceImage}
-              title="Electronic and thermal devices for tissue engineering"
-              details="details details details details details details details details details details details details details details details details details details details details details "
-            />
-          </div>
-          <div>
-            <ResearchLi
-              image={DeviceImage}
-              title="Electronic and thermal devices for tissue engineering"
-              details="details details details details details details details details details details details details details details details details details details details details details "
-            />
-          </div> */}
         </div>
+
+        {/* Acknowledgments Section */}
         <div className="mt-24 flex flex-col">
           <div className="text-2xl lg:text-4xl font-bold self-center">
             Acknowledgments
@@ -84,15 +83,10 @@ export default function Research() {
               />
             </a>
           </div>
-
-
-
-
-
           <div className="mt-2 md:mt-5 md:text-xl">
             <Link
               className="hover:text-blue-500 underline"
-              href="https://kdb.iimc.kyoto-u.ac.jp/profile_private/ja.021b7faef0586f89.html#display-items_research"
+              href="https://www.cfi.eng.osaka-u.ac.jp/seeds/seeds_list_1/lijun_liu_assist/"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -100,6 +94,7 @@ export default function Research() {
             </Link>
           </div>
         </div>
+
       </div>
     </div>
   );
@@ -114,13 +109,20 @@ const ResearchLi = ({
   image: StaticImageData;
   details: string;
 }) => {
+  const detailsWithBreaks = details.split('\n').map((line, index, arr) => (
+    <div key={index}>
+      {line}
+      {index < arr.length - 1 && <br />}
+    </div>
+  ));
+
   return (
     <>
       <div className="hidden lg:flex flex-col gap-6 mt-20">
         <div className="text-3xl font-bold">{title}</div>
         <div className="flex flex-row gap-8 items-center">
           <Image src={image} alt="" className="w-1/3" />
-          <div className="text-justify">{details}</div>
+          <div className="text-justify">{detailsWithBreaks}</div>
         </div>
       </div>
       <div className="flex lg:hidden flex-col items-center gap-6 mt-8">
@@ -128,7 +130,7 @@ const ResearchLi = ({
           {title}
         </div>
         <Image src={image} alt="" className="w-full md:w-4/5" />
-        <div className="text-justify lg:text-lg">{details}</div>
+        <div className="text-justify lg:text-lg">{detailsWithBreaks}</div>
       </div>
     </>
   );

@@ -14,9 +14,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+// メタデータの定義
+// logo.png を修正する
 export const metadata: Metadata = {
-  title: "J.HIROTANI LAB",
-  description: "Welcome to J.HIROTANI Webpage!",
+  title: "L. LIU LAB",
+  description: "Welcome to L. LIU Webpage!",
   openGraph: {
     images: ["./_images/logo.png"],
   },
