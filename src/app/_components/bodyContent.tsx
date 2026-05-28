@@ -28,14 +28,14 @@ export default function BodyContent({ child }: Props) {
         <div className="hidden p-20 w-full bg-gray-900 text-white mt-32 lg:flex lg:flex-row items-center">
           <div className="flex flex-col gap-6 w-1/2">
             <Image src={LogoImage} alt="logo" className="w-2/3" />
-            <div className="text-xs">© L.LIU GROUP, 2026</div>
+            <div className="text-xs">© L. LIU GROUP, 2026</div>
           </div>
           <div className="flex flex-col gap-1 text-sm">
             <div className="text-xl">Contact Information for Lijun Liu</div>
             <div>E-mail : liu@mech.eng.osaka-u.ac.jp</div>
             <div>
-              Access : Osaka University, Toyonaka Campus, Bldg. No. C3, Room S14,
-              Nishikyo-Ku, Kyoto, JAPAN
+              Access : Department of Mechanical Engineering, Osaka University, 
+              Bldg. No. M1, Room 726, 2-1 Yamadaoka, Suita 565-0871, Japan
             </div>
           </div>
         </div>
@@ -47,10 +47,11 @@ export default function BodyContent({ child }: Props) {
             <div className="text-lg">Contact Information for Lijun Liu</div>
             <div>E-mail : liu@mech.eng.osaka-u.ac.jp</div>
             <div>
-              Access : Department of Mechanical Engineering, Osaka University, 2-1 Yamadaoka, Suita 565-0871, Japan
+              Access : Department of Mechanical Engineering, Osaka University, 
+              Bldg. No. M1, Room 726, 2-1 Yamadaoka, Suita 565-0871, Japan
             </div>
           </div>
-          <div className="text-xs">© L.LIU GROUP, 2026</div>{" "}
+          <div className="text-xs">© L. LIU GROUP, 2026</div>{" "}
         </div>
         {/* ここまでフッター */}
       </div>
