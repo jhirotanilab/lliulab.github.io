@@ -34,7 +34,7 @@ export default function Contact() {
               Osaka University
             </p>
             <p>Functional Structural Engineering | Solid Mechanics Division, Matsumoto Laboratory</p>
-            <p>TEL: In Preparation...</p>
+            <p>TEL: +81) 6-6879-4121</p>
             <p>E-mail: liu@mech.eng.osaka-u.ac.jp</p>
           </div>
 
@@ -44,8 +44,8 @@ export default function Contact() {
             <p>大阪府吹田市山田丘2-1 大阪大学吹田キャンパスM1棟726室</p>
             <p>大阪大学工学研究科機械工学専攻</p>
             <p>機能構造学系｜固体力学領域 松本研究室</p>
-            <p>電話番号：In Preparation...</p>
-            <p>メールアドレス：liu@mech.eng.osaka-u.ac.jp</p>
+            <p>電話番号： 06-6879-4121</p>
+            <p>メールアドレス： liu@mech.eng.osaka-u.ac.jp</p>
           </div>
         </div>
       </div>

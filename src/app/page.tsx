@@ -1,6 +1,6 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import HeroImage from "./_images/fdtr.jpeg";
+import HeroImage from "./_images/HeroImage.jpg";
 import LogoImage from "./_images/Unknown.png";
 
 import OFETImage from "./_images/OFET.jpg";
