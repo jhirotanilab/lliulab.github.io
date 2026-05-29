@@ -21,13 +21,12 @@ export default function Research() {
           Research Topics
         </div>
         <div className="flex flex-col gap-8 md:gap-10 lg:gap-16 mt-4 md:mt-0">
-          <div id="ofet">
+          <div id="machine-learning">
             <ResearchLi
-              image={OFETImage}
-              title="Analysis of Organic Field-Effect Transistors"
-              details="The Organic Field-Effect Transistor (OFET) is recognized as a pivotal device in applications such as flexible circuits, sensors, and memory storage. However, its performance typically lags behind that of inorganic counterparts. Enhancing the performance of OFETs necessitates precise control over the characteristics of the organic semiconductor layer.
-              Recent advancements in molecular-level simulation techniques, including kinetic Monte Carlo methods, have significantly enhanced the capability to replicate the microscopic behavior of charge carriers. Nevertheless, these approaches often depend on two-dimensional Poisson equations, which inadequately capture short-range electrostatic interactions.
-              In this research, we successfully employed a three-dimensional partial differential equation solver to model OFET devices, fully accounting for the Coulomb interactions between charge carriers. Our findings reveal that at elevated gate voltages, the transfer characteristics derived from the three-dimensional Poisson equation exhibit a downward curvature and lower values compared to those predicted by two-dimensional Poisson equations, suggesting strong concordance with experimental observations."
+              image={MLandHPCImage}
+              title="Integration of Machine Learning and High-Performance Computing"
+              details="The optimization of material structures and the design of new materials rely on accurate property predictions through high-precision computational methods. While conventional macroscale modeling addresses real-scale simulations, it often depends on empirical approaches that limit accuracy. Conversely, atomistic-level techniques like ab initio molecular dynamics (AIMD) offer high precision but come with high computational costs, restricting the time and spatial scales that can be simulated. As chemical reactions and phase transitions occur on millisecond to microsecond time scales, reproducing these phenomena with AIMD is challenging, highlighting the need for rapid, high-precision analytical methods.
+              In this study, we employed a machine learning-based interatomic potential model for optimization on the Fugaku supercomputer, maintaining the accuracy of potential energy and interatomic forces. This approach resulted in a 31.7-fold increase in the computational speed of molecular dynamics (MD) simulations, achieving 149 nanoseconds per day across 12,000 nodes while retaining ab initio calculation accuracy."
             />
           </div>
           <div id="magnesium">
@@ -38,12 +37,13 @@ export default function Research() {
                       This study presents a theoretical model aimed at predicting the CRSS in single-crystal Mg–Ca alloys. We quantitatively investigated the CRSS of basal dislocation slip along the basal plane using molecular dynamics simulations across a temperature range of 1 K to 500 K. The results obtained from the proposed theoretical model agree well with both simulation findings and micro-pillar compression test results for Mg–0.3 at.% Ca and Mg–0.6 at.% Ca alloys at ambient temperature."
             />
           </div>
-          <div id="machine-learning">
+          <div id="ofet">
             <ResearchLi
-              image={MLandHPCImage}
-              title="Integration of Machine Learning and High-Performance Computing"
-              details="The optimization of material structures and the design of new materials rely on accurate property predictions through high-precision computational methods. While conventional macroscale modeling addresses real-scale simulations, it often depends on empirical approaches that limit accuracy. Conversely, atomistic-level techniques like ab initio molecular dynamics (AIMD) offer high precision but come with high computational costs, restricting the time and spatial scales that can be simulated. As chemical reactions and phase transitions occur on millisecond to microsecond time scales, reproducing these phenomena with AIMD is challenging, highlighting the need for rapid, high-precision analytical methods.
-              In this study, we employed a machine learning-based interatomic potential model for optimization on the Fugaku supercomputer, maintaining the accuracy of potential energy and interatomic forces. This approach resulted in a 31.7-fold increase in the computational speed of molecular dynamics (MD) simulations, achieving 149 nanoseconds per day across 12,000 nodes while retaining ab initio calculation accuracy."
+              image={OFETImage}
+              title="Analysis of Organic Field-Effect Transistors"
+              details="The Organic Field-Effect Transistor (OFET) is recognized as a pivotal device in applications such as flexible circuits, sensors, and memory storage. However, its performance typically lags behind that of inorganic counterparts. Enhancing the performance of OFETs necessitates precise control over the characteristics of the organic semiconductor layer.
+              Recent advancements in molecular-level simulation techniques, including kinetic Monte Carlo methods, have significantly enhanced the capability to replicate the microscopic behavior of charge carriers. Nevertheless, these approaches often depend on two-dimensional Poisson equations, which inadequately capture short-range electrostatic interactions.
+              In this research, we successfully employed a three-dimensional partial differential equation solver to model OFET devices, fully accounting for the Coulomb interactions between charge carriers. Our findings reveal that at elevated gate voltages, the transfer characteristics derived from the three-dimensional Poisson equation exhibit a downward curvature and lower values compared to those predicted by two-dimensional Poisson equations, suggesting strong concordance with experimental observations."
             />
           </div>
         </div>
@@ -59,9 +59,8 @@ export default function Research() {
           <div>
             <ul className="md:mt-4 list-disc pl-4 md:text-2xl md:space-y-2">
               <li>JSPS Grant-in-Aid for Scientific Research</li>
-              <li>JST PRESTO</li>
-              <li>NEDO</li>
-              <li>JKA</li>
+              <li>JST ACT-i</li>
+              <li>JKA <a href="/JKA_report_2025M_395.pdf" target="_blank" rel="noopener noreferrer" className="text-base text-blue-500 hover:underline">detail</a></li>
             </ul>
             <div className="md:mt-2">
               <span className="md:text-xl">etc.</span>
@@ -86,7 +85,7 @@ export default function Research() {
           <div className="mt-2 md:mt-5 md:text-xl">
             <Link
               className="hover:text-blue-500 underline"
-              href="https://www.cfi.eng.osaka-u.ac.jp/seeds/seeds_list_1/lijun_liu_assist/"
+              href="https://researchmap.jp/kellyliu?lang=en"
               target="_blank"
               rel="noreferrer noopener"
             >

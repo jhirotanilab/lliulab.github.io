@@ -30,7 +30,7 @@ export default function Member() {
               <p className="text-xl lg:text-2xl">Assistant Professor</p>
               <p className="text-base lg:text-lg">
                 Department of Mechanical Engineering, 
-                Osaka University, Japan
+                The University of Osaka, Japan
               </p>
             </div>
             <div className="self-center lg:self-start">
@@ -45,7 +45,7 @@ export default function Member() {
                   src={"/_images/OsakaUniv_logo.png"}
                   width={200}
                   height={100}
-                  alt="Osaka University logo"
+                  alt="The University of Osaka logo"
                 />
               </Link>
             </div>
@@ -88,7 +88,7 @@ export default function Member() {
             <div>
               <ul className="list-disc pl-4 text-base lg:text-lg">
                 <li>
-                  Assistant Professor, Department of Mechanical Engineering, Osaka University  (Apr. 2019 – Present)
+                  Assistant Professor, Department of Mechanical Engineering, The University of Osaka  (Apr. 2019 – Present)
                 </li>
                 <li>
                   Visiting Faculty Member, Information technology center, Nagoya University  (Jul. 2018 – Mar. 2019)
