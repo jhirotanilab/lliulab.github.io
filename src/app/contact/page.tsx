@@ -26,12 +26,12 @@ export default function Contact() {
             <p>【English】</p>
             <p>〒 565-0871</p>
             <p>
-              Osaka University, Suita Campus, Bldg. No. M1, Room 726,
+              The University of Osaka, Suita Campus, Bldg. No. M1, Room 726,
               2-1 Yamadaoka, Suita, Osaka, JAPAN
             </p>
             <p>
-              Department of Mechanical Engineering, Graduate School of Engineering
-              Osaka University
+              Department of Mechanical Engineering, Graduate School of Engineering,
+              The University of Osaka
             </p>
             <p>Functional Structural Engineering | Solid Mechanics Division, Matsumoto Laboratory</p>
             <p>TEL: +81) 6-6879-4121</p>

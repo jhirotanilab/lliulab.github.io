@@ -76,9 +76,9 @@ export default function Home() {
           <div className="text-4xl font-bold">RESEARCH</div>
           <div className="flex flex-col gap-10 lg:gap-8">
             <ResearchLi
-              image={OFETImage}
-              title="Analysis of Organic Field-Effect Transistors"
-              link="/research#ofet"
+              image={MLandHPCImage}
+              title="Integration of Machine Learning and High-Performance Computing"
+              link="/research#machine-learning"
             />
             <ResearchLi
               image={MagnesiumImage}
@@ -86,9 +86,9 @@ export default function Home() {
               link="/research#magnesium"
             />
             <ResearchLi
-              image={MLandHPCImage}
-              title="Integration of Machine Learning and High-Performance Computing"
-              link="/research#machine-learning"
+              image={OFETImage}
+              title="Analysis of Organic Field-Effect Transistors"
+              link="/research#ofet"
             />
           </div>
           <Link href={"/research"} className="text-xl self-center">
@@ -122,9 +122,8 @@ export default function Home() {
           <div>
             <ul className="md:mt-4 list-disc pl-4 md:text-2xl md:space-y-2">
               <li>JSPS Grant-in-Aid for Scientific Research</li>
-              <li>JST PRESTO</li>
-              <li>NEDO</li>
-              <li>JKA</li>
+              <li>JST ACT-i</li>
+              <li>JKA <a href="/JKA_report_2025M_395.pdf" target="_blank" rel="noopener noreferrer" className="text-base text-blue-500 hover:underline">detail</a></li>
             </ul>
             <div className="md:mt-2">
               <span className="md:text-xl">etc.</span>

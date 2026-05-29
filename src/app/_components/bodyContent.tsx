@@ -34,7 +34,7 @@ export default function BodyContent({ child }: Props) {
             <div className="text-xl">Contact Information for Lijun Liu</div>
             <div>E-mail : liu@mech.eng.osaka-u.ac.jp</div>
             <div>
-              Access : Department of Mechanical Engineering, Osaka University, 
+              Access : Department of Mechanical Engineering, The University of Osaka, 
               Bldg. No. M1, Room 726, 2-1 Yamadaoka, Suita 565-0871, Japan
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function BodyContent({ child }: Props) {
             <div className="text-lg">Contact Information for Lijun Liu</div>
             <div>E-mail : liu@mech.eng.osaka-u.ac.jp</div>
             <div>
-              Access : Department of Mechanical Engineering, Osaka University, 
+              Access : Department of Mechanical Engineering, The University of Osaka, 
               Bldg. No. M1, Room 726, 2-1 Yamadaoka, Suita 565-0871, Japan
             </div>
           </div>
