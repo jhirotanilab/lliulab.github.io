@@ -123,7 +123,7 @@ export default function Home() {
             <ul className="md:mt-4 list-disc pl-4 md:text-2xl md:space-y-2">
               <li>JSPS Grant-in-Aid for Scientific Research</li>
               <li>JST ACT-i</li>
-              <li>JKA <a href="/JKA_report_2025M_395.pdf" target="_blank" rel="noopener noreferrer" className="text-base text-blue-500 hover:underline">detail</a></li>
+              <li>JKA <a href="/JKA_report_3.pdf" target="_blank" rel="noopener noreferrer" className="text-base text-blue-500 hover:underline">detail</a></li>
             </ul>
             <div className="md:mt-2">
               <span className="md:text-xl">etc.</span>
